@@ -1,346 +1,286 @@
+Find what you need faster … Home is your new landing page and surfaces your most relevant files and folders
 <html>
-<head>
-<title>Student Assignment Submission</title>
-</head>
-<body>
-<fieldset> 
-<legend><mark>Assignment Submission</mark></legend> 
-<center> 
-<h1><u><b><strong><mark><font color="blue">GOVERNMENT POLYTECHNIC, PALANPUR</font></mark></strong></b></u></h1>
-<h2><b><u>
-<font color="red">Information technology</font>
-</u></b></h2>
-</center>
-<label><h3><u><strong>Student Assignment Submission</strong></u></h3></label>
-<select name="drop-down">
-<option value="unit">Unit-1</option>
-<option value="unit">Unit-2</option>
-<option value="unit">Unit-3</option>
-<option value="unit">Unit-4</option>
-<option value="unit">Unit-5</option>
-<option value="unit">Unit-6</option>
-</select>
-<label><b>Subject:</b></label>
-<select name="drop-down">
-<option value="sub">Communication Skill in English</option>
-<option value="sub">Introduction to I.T. System</option>
-<option value="sub">Maths</option>
-<option value="sub">Python Programming</option>
-<option value="sub">S.W.D.</option>
-<option value="sub">Sport&Yoga</option>
-</select>
-<label><b>Sem:</b></label>
-<input type="number" value="1">
-<label><b>Branch:</b></label>
-<input type="text" value="I.T."> 
-<br> 
-<br> 
-<label><b>Subject Code:</b></label> 
-<select name="drop-down">
-<option value="sub">4300002</option>
-<option value="sub">4311602</option>
-<option value="sub">4300001</option>
-<option value="sub">4311601</option>
-<option value="sub">4311603</option>
-<option value="sub">4300015</option>
-</select>
-<label><b>Date</b></label> 
-<input type="date"> 
-<br> 
-<br>
-<hr>
-<table  border ="2" align="center">
-	<tr> 
-	    <td><b>SR No.</b></td> 
-	    <td><b>Enrollment No.</b></td> 
-	    <td><b>Name of Student</b></td> 
-	    <td><b>Yes</b></td>
-	    <td><b>No</b></td>
-	</tr> 
-	<tr> 
-	    <td>01</td> 
-	    <td>GPP-IT-01</td> 
-	    <td>BHAGAT JAYDIP TUSHARKUMAR</td> 
-	    <td><input type="radio" name="option"></td>
-	    <td><input type="radio" name="option"></td>
-	</tr> 
-	<tr> 
-	    <td>02</td> 
-	    <td>GPP-IT-02</td> 
-	    <td>BHARMBEY MOHIT SURESH</td> 
-	    <td><input type="radio" name="A"></td>
-	    <td><input type="radio" name="A"></td>
-	</tr> 
-	<tr> 
-	     <td>03</td> 
-	     <td>GPP-IT-03</td> 
-	     <td>CHAUDHARI SMITKUMAR BABUBHAI</td>
-	     <td><input type="radio" name="B"></td>
-	     <td><input type="radio" name="B"></td>
-	 </tr>    
-	 <tr>
-	    <td>04</td> 
-	    <td>GPP-IT-04</td> 
-	    <td>CHAUDHARY HAIDARALI HASANALI</td> 
-	    <td><input type="radio" name="C"></td>
-	    <td><input type="radio" name="C"></td>
-	 </tr> 
-	 <tr>
-	    <td>05</td> 
-	    <td>GPP-IT-05</td> 
-	    <td>CHAUDHARY HARD DINESHBHAI</td> 
-	    <td><input type="radio" name="D"></td>
-	    <td><input type="radio" name="D"></td>
-	 </tr> 
-	 <tr>
-	    <td>06</td> 
-	    <td>GPP-IT-06</td> 
-	    <td>CHAUDHARY KAJIMALI MAHAMMADALI</td> 
-	    <td><input type="radio" name="E"></td>
-	    <td><input type="radio" name="E"></td>
+ <head>
+  <title>Student Attendance Form </title>
+ </head>
+ <body>
+  <h2>Student Attendance Form</h2>
+  <form id="attendanceForm" onsubmit="updateTotalStudents(event)">
+    <fieldset>
+        <legend><b>Student Assignment Submission</b></legend>
+        <center> 
+            <h1><u><b><strong><mark><font color="blue">GOVERNMENT POLYTECHNIC, PALANPUR</font></mark></strong></b></u></h1>
+            <h2><b><u>
+            <font color="red">Information technology</font>
+            </u></b></h2>
+            </center>
+            <label><h1><u><strong><mark><font color="red">*Student Assignment Submission</font></mark></strong></u></h1></label>
+            
+            <label><b>*Subject:</b></label>
+            <select name="drop-down">
+            <option value="sub">Communication Skill in English</option>
+            <option value="sub">Introduction to I.T. System</option>
+            <option value="sub">Maths</option>
+            <option value="sub">Python Programming</option>
+            <option value="sub">S.W.D.</option>
+            <option value="sub">Sport&Yoga</option>
+            </select>
+        
+            <label><b>*Unit(ch.):</b></label>
+            <select name="drop-down">
+                <option value="unit">Unit-1</option>
+                <option value="unit">Unit-2</option>
+                <option value="unit">Unit-3</option>
+                <option value="unit">Unit-4</option>
+                <option value="unit">Unit-5</option>
+                <option value="unit">Unit-6</option>
+            </select>
+            <label><b>*Sem:</b></label>
+            <input type="number" value="1">
+            <label><b>*Branch:</b></label>
+            <input type="text" value="I.T."> 
+            <br> 
+            <br> 
+            <label><b>*Subject Code:</b></label> 
+            <select name="drop-down">
+            <option value="sub">4300002</option>
+            <option value="sub">4311602</option>
+            <option value="sub">4300001</option>
+            <option value="sub">4311601</option>
+            <option value="sub">4311603</option>
+            <option value="sub">4300015</option>
+            </select>
+            <label><b>*Date</b></label> 
+            <input type="date"> 
+            <br><label for="total">Total Students:</label> <input type="text" id="total" name="total" readonly>
+            <br> 
+            <br>
+            <hr>
+            <table class="attendance-table" border="2" align="center">
+    <thead>
+     <tr>
+      <th>Roll No</th>
+      <th>Name</th>
+      <th>Present Status</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>1</td>
+      <td>BHAGAT JAYDIP TUSHARKUMAR</td>
+      <td><input type="checkbox"></td>
      </tr>
      <tr>
-        <td>07</td> 
-        <td>GPP-IT-07</td> 
-        <td>CHAUHAN JAY ATULBHAI</td> 
-        <td><input type="radio" name="F"></td>
-        <td><input type="radio" name="F"></td>
+      <td>2</td>
+      <td>BHARMBEY MOHIT SURESHBHAI</td>
+      <td><input type="checkbox"></td>
      </tr>
      <tr>
-        <td>08</td> 
-        <td>GPP-IT-08</td> 
-        <td>CHAUHAN JAYENDRA KULDIPKUMAR</td> 
-        <td><input type="radio" name="G"></td>
-        <td><input type="radio" name="G"></td>
-      </tr>
-      <tr>
-        <td>09</td> 
-        <td>GPP-IT-09</td> 
-        <td>CHAUHAN RUSHIL DINESHBHAI</td> 
-        <td><input type="radio" name="H"></td>
-        <td><input type="radio" name="H"></td>
-        </tr>
-        <tr>
-        <td>10</td> 
-        <td>GPP-IT-10</td> 
-        <td>DAVE ATULKUMAR LALABHAI</td> 
-        <td><input type="radio" name="I"></td>
-        <td><input type="radio" name="I"></td>
-        </tr>
-        <tr>
-        <td>11</td> 
-        <td>GPP-IT-11</td> 
-        <td>DEVU ASHISHKUMAR VIRABHAI</td> 
-        <td><input type="radio" name="J"></td>
-        <td><input type="radio" name="J"></td>
-        </tr>
-        <tr>
-        <td>12</td> 
-        <td>GPP-IT-12</td> 
-        <td>DHOBI VIDHIBEN BHAVESHKUMAR</td> 
-        <td><input type="radio" name="K"></td>
-        <td><input type="radio" name="K"></td>
-        </tr>
-        <tr>
-        <td>13</td> 
-        <td>GPP-IT-13</td> 
-        <td>KHATRI SUHANI MITULKUMAR</td> 
-        <td><input type="radio" name="L"></td>
-        <td><input type="radio" name="L"></td>
-        </tr>
-        <tr>
-        <td>14</td> 
-        <td>GPP-IT-14</td> 
-        <td>LUHARIYA AVISHKUMAR LALAJIBHAI</td> 
-        <td><input type="radio" name="M"></td>
-        <td><input type="radio" name="M"></td>
-        </tr>
-        <tr>
-        <td>15</td> 
-        <td>GPP-IT-15</td> 
-        <td>MEWADA SRUSHTI BHARATKUMAR</td> 
-        <td><input type="radio" name="N"></td>
-        <td><input type="radio" name="N"></td>
-        </tr>
-        <tr>
-        <td>16</td> 
-        <td>GPP-IT-16</td> 
-        <td>OAD SHILPABEN BHARATBHAI</td> 
-        <td><input type="radio" name="O"></td>
-        <td><input type="radio" name="O"></td>
-        </tr>
-        <tr>
-        <td>17</td> 
-        <td>GPP-IT-17</td> 
-        <td>OD RUTVIKABEN JAYANTIBHAI</td> 
-        <td><input type="radio" name="P"></td>
-        <td><input type="radio" name="P"></td>
-        </tr>
-        <tr>
-        <td>18</td> 
-        <td>GPP-IT-18</td> 
-        <td>PAL KUNDAN NILESHKUMAR</td> 
-        <td><input type="radio" name="Q"></td>
-        <td><input type="radio" name="Q"></td>
-        </tr>
-        <tr>
-        <td>19</td> 
-        <td>GPP-IT-19</td> 
-        <td>PANCHAL HAPPY KALPESHBHAI</td> 
-        <td><input type="radio" name="R"></td>
-        <td><input type="radio" name="R"></td>
-        </tr>
-        <tr>
-        <td>20</td> 
-        <td>GPP-IT-20</td> 
-        <td>PARMAR HARSHKUMAR BHARATBHAI</td> 
-        <td><input type="radio" name="S"></td>
-        <td><input type="radio" name="S"></td>
-        </tr>
-        <tr>
-        <td>21</td> 
-        <td>GPP-IT-21</td> 
-        <td>PARMAR JAIMIN RAJNIKANT</td> 
-        <td><input type="radio" name="T"></td>
-        <td><input type="radio" name="T"></td>
-        </tr>
-        <tr>
-        <td>22</td> 
-        <td>GPP-IT-22</td> 
-        <td>PARMAR UTTAM RAJENDRABHAI</td> 
-        <td><input type="radio" name="U"></td>
-        <td><input type="radio" name="U"></td>
-        </tr>
-        <tr>
-        <td>23</td> 
-        <td>GPP-IT-23</td> 
-        <td>PATEL KAVAN KAUSHIKHAI</td> 
-        <td><input type="radio" name="V"></td>
-        <td><input type="radio" name="V"></td>
-        </tr>
-        <tr>
-        <td>24</td> 
-        <td>GPP-IT-24</td> 
-        <td>PATEL KRISHKUMAR SANDIPBHAI</td> 
-        <td><input type="radio" name="W"></td>
-        <td><input type="radio" name="W"></td>
-        </tr>
-        <tr>
-        <td>25</td> 
-        <td>GPP-IT-25</td> 
-        <td>PATEL PRINCE ANILBHAI</td> 
-        <td><input type="radio" name="X"></td>
-        <td><input type="radio" name="X"></td>
-        </tr>
-        <tr>
-        <td>26</td> 
-        <td>GPP-IT-26</td> 
-        <td>PATEL PURVA JAYESHKUMAR</td> 
-        <td><input type="radio" name="Y"></td>
-        <td><input type="radio" name="Y"></td>
-        </tr>
-        <tr>
-        <td>27</td> 
-        <td>GPP-IT-27</td> 
-        <td>PAVAYA ANSH NARESHBHAI</td>
-        <td><input type="radio" name="Z"></td>
-        <td><input type="radio" name="Z"></td>
-        </tr>
-        <tr>
-        <td>28</td> 
-        <td>GPP-IT-28</td> 
-        <td>PRAJAPATI DIVYESHKUMAR MEHULKUMAR</td> 
-        <td><input type="radio" name="name"></td>
-        <td><input type="radio" name="name"></td>
-        </tr>
-        <tr>
-        <td>29</td> 
-        <td>GPP-IT-29</td> 
-        <td>PRAJAPATI DIXIT KIRTIBHAI</td> 
-        <td><input type="radio" name="a"></td>
-        <td><input type="radio" name="a"></td>
-        </tr>
-        <tr>
-        <td>30</td> 
-        <td>GPP-IT-30</td> 
-        <td>PRAJAPATI JAYKUMAR VIKRAMBHAI</td> 
-        <td><input type="radio" name="b"></td>
-        <td><input type="radio" name="b"></td>
-        </tr>
-        <tr>
-        <td>31</td> 
-        <td>GPP-IT-31</td> 
-        <td>QURESHI SANIYABANU SAHIDAHAMAD</td> 
-        <td><input type="radio" name="c"></td>
-        <td><input type="radio" name="c"></td>
-        </tr>
-        <tr>
-        <td>32</td> 
-        <td>GPP-IT-32</td> 
-        <td>RAJPUT ARPIT MOHANSINH</td> 
-        <td><input type="radio" name="d"></td>
-        <td><input type="radio" name="d"></td>
-        </tr>
-        <tr>
-        <td>33</td> 
-        <td>GPP-IT-33</td> 
-        <td>SAGAR JANUBEN BHARATBHAI</td> 
-        <td><input type="radio" name="e"></td>
-        <td><input type="radio" name="e"></td>
-        </tr>
-        <tr>
-        <td>34</td> 
-        <td>GPP-IT-34</td> 
-        <td>SHAH TANAY MAHESHKUMAR</td> 
-        <td><input type="radio" name="f"></td>
-        <td><input type="radio" name="f"></td>
-        </tr>
-        <tr>
-        <td>35</td> 
-        <td>GPP-IT-35</td> 
-        <td>SUTHAR PIYUSHKUMAR BALDEVBHAI</td> 
-        <td><input type="radio" name="g"></td>
-        <td><input type="radio" name="g"></td>
-        </tr>
-        <tr>
-        <td>36</td> 
-        <td>GPP-IT-36</td> 
-        <td>TELI PRINCE PRITHVIRAJ</td> 
-        <td><input type="radio" name="h"></td>
-        <td><input type="radio" name="h"></td>
-        </tr>
-        <tr>
-        <td>37</td> 
-        <td>GPP-IT-37</td> 
-        <td>TRIVEDI AYUSH ASHISHKUMAR</td> 
-        <td><input type="radio" name="i"></td>
-        <td><input type="radio" name="i"></td>
-        </tr>
-        <tr>
-        <td>38</td> 
-        <td>GPP-IT-38</td> 
-        <td>TRIVEDI KRISH MAYURKUMAR</td> 
-        <td><input type="radio" name="j"></td>
-        <td><input type="radio" name="j"></td>
-        </tr>
-        <tr>
-        <td>39</td> 
-        <td>GPP-IT-39</td> 
-        <td>VAGHELA SANJAYKUMAR RAMESHBHAI</td> 
-        <td><input type="radio" name="k"></td>
-        <td><input type="radio" name="k"></td>
-        </tr>
-</table>
-<br>
-<br>
-<input type="button" value="Reset" name="Reset">
-<input type="button" value="Submit" name="Submit">
-<br>
-<br>
-Guidance by : Milav sir
-<footer>
-Written by :-Jay Prajapati<br>
-Roll nu. :-30</footer>
-</fieldset>
-</body>
+      <td>3</td>
+      <td>CHAUDARI SMITKUMAR BABUBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>4</td>
+      <td>CHAUDARI HAIDARALI HASANALI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>5</td>
+      <td>CHAUDARI HARD DINESHBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>6</td>
+      <td>CHAUDARI KAJIMALI MAHAMMADALI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>7</td>
+      <td>CHAUHAN JAY ATULBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>8</td>
+      <td>CHAUHAN JAYENDRA KULDIPKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>9</td>
+      <td>CHAUHAN RUSHIL DINESHBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>10</td>
+      <td>DAVE ATULKUMAR LALABHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>11</td>
+      <td>DAVE ASHISHKUMAR VIRABHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>12</td>
+      <td>DHOBI VIDHIBEN BHAVESHKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>13</td>
+      <td>KHATRI SUHANI MITULKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>14</td>
+      <td>LUHARIYA AVISHKUMAR LALAJIBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>15</td>
+      <td>MEWADA SRUSHTI BHARATKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>16</td>
+      <td>OAD SHILPABEN BHARATBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>17</td>
+      <td>OAD RUTVIKABEN JAYANTIBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>18</td>
+      <td>PAL KUNDAN NILESHKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>19</td>
+      <td>PANCHAL HAPPY KALPESHBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>20</td>
+      <td>PARMAR HARSHKUMAR BHARATBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>21</td>
+      <td>PARMAR JAIMIN RAJNIKANT</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>22</td>
+      <td>PARMAR UTTAM RAJENDRABHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>23</td>
+      <td>PATAL KAVAN KAUSHIKBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>24</td>
+      <td>PATAL KRISHKUMAR SANDIPBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>25</td>
+      <td>PATAL PRINCE ANILBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>26</td>
+      <td>PATAL PURVA JAYESHKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>27</td>
+      <td>PAVAYA ANSH NARESHBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>28</td>
+      <td>PRAJAPATI DIVYESHKUMAR MEHULBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>29</td>
+      <td>PRAJAPATI DIXIT KIRTIBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>30</td>
+      <td>PARAJAPATI JAYKUMAR VIKRAMBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>31</td>
+      <td>QURESHI SANIYABANU SAHIDAHAMAD</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>32</td>
+      <td>RAJPUT ARPIT MOHANSINH</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>33</td>
+      <td>SAGAR JANUBEN BHARATBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>34</td>
+      <td>SAHA TANAY MAHESHKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>35</td>
+      <td>SUTHAR PIYUSHKUMAR BALDEVBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>36</td>
+      <td>TELI PRINCE PRITHVIRAJ</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>37</td>
+      <td>TRIVEDI AYUSH ASHISHKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>38</td>
+      <td>TRIVEDI KRISH MAYURKUMAR</td>
+      <td><input type="checkbox"></td>
+     </tr>
+     <tr>
+      <td>39</td>
+      <td>VAGHELA SANJAYKUMAR RAMESHBHAI</td>
+      <td><input type="checkbox"></td>
+     </tr>
+    </tbody>
+   </table>
+   <input type="reset">
+   <input type="submit" value="Submit">
+   <h4>
+    *Guidance by : <u>Milav sir</u>
+    <footer>
+        *Written by : <u>Jay Prajapati</u><br>
+        *Roll nu. : <u>30</u>
+    </h4>
+    </footer>
+    </fieldset>
+  </form>
+  <script>
+        function updateTotalStudents(event) {
+            event.preventDefault();
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const checkedCheckboxes = Array.from(checkboxes).filter(checkbox => checkbox.checked);
+
+            document.getElementById('total').value = checkedCheckboxes.length;
+        }
+    </script>
+ </body>
 </html>
