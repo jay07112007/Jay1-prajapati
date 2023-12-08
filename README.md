@@ -1,4 +1,4 @@
--👋 Hi, I’m Jay Prajapati
+-👋 Hello, I’m Jay Prajapati
 -👀 I’m interested in coding.
 -🌱 I’m currently learning python and ai.
 -💞️ I’m looking to collaborate on python programing language and ai.
